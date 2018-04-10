@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maksim Baravy](https://up.htmlacademy.ru/adaptive/14/user/388127).
-* Наставник: `Неизвестно`.
+* Наставник: [Инна Кришталь](https://htmlacademy.ru/profile/id43485).
 
 ---
 
