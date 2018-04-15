@@ -32,16 +32,17 @@
     </header>
 
     <main class="page-main">
+      <h1 class="visually-hidden">Форма отзыва города Седона</h1>
       <section class="intro">
-        <h1 class="visually-hidden">Welcom to the gorgeous Sedona</h1>
+        <h2 class="visually-hidden">Welcom to the gorgeous Sedona</h2>
         <img class="intro__image" src="img/image.svg" width="282" height="214"  alt="Welcome to the Sedona">
       </section>
       <section class="feedback">
-        <h1 class="feedback__title">Оставьте свой отзыв</h1>
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
         <p class="feedback__info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form method="post" action="https://echo.htmlacademy.ru" class="feedback__form form">
           <fieldset class="form__fieldset fullname">
-            <h2 class="fullname__title">Представьтесь:</h2>
+            <h3 class="fullname__title">Представьтесь:</h3>
             <label for="first-name" class="fullname__label ">Имя*:</label>
             <input type="text" id="first-name" placeholder="Петр" class="fullname__input" required>
             <label for="last-name" class="fullname__label ">Фамилия*:</label>
@@ -50,14 +51,14 @@
             <input type="text" id="middle-name" placeholder="Александрович" class="fullname__input">
           </fieldset>
           <fieldset class="form__fieldset contacts">
-            <h2 class="contacts__title">Контактная информация:</h2>
+            <h3 class="contacts__title">Контактная информация:</h3>
             <label for="phone-number" class="contacts__label">Контактный телефон*:</label>
             <input type="text" id="phone-number" placeholder="Введите телефон" class="contacts__input" required>
             <label for="email" class="contacts__label">Электронная почта*:</label>
             <input type="email" id="email" placeholder="Введите e-mail" class="contacts__input" required>
           </fieldset>
           <fieldset class="form__fieldset effect">
-            <h2 class="effect__title">Ваше общее впечатление:</h2>
+            <h3 class="effect__title">Ваше общее впечатление:</h3>
             <input type="radio" id="good" name="effect" class="effect__input">
             <label for="good" class="effect__label">Скорее положительное</label>
             <input type="radio" id="bad" name="effect" class="effect__input">
@@ -66,7 +67,7 @@
             <label for="nevermind" class="effect__label">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__fieldset attraction">
-            <h2 class="attraction__title">Посещенные достопримечательности:</h2>
+            <h3 class="attraction__title">Посещенные достопримечательности:</h3>
             <input type="checkbox" id="devil" value="1" class="attraction__input">
             <label for="devil" class="attraction__label">Мост Дьявола</label>
             <input type="checkbox" id="bell" value="2" class="attraction__input">
@@ -77,7 +78,7 @@
             <label for="rock" class="attraction__label">Красные скалы</label>
           </fieldset>
           <fieldset class="form__fieldset emotion">
-            <h2 class="emotion__title">Опишите свои эмоции:</h2>
+            <h3 class="emotion__title">Опишите свои эмоции:</h3>
             <textarea cols="30" rows="10" placeholder="Опишите подробно все свои восторги" class="emotion__text"></textarea>
           </fieldset>
           <button class="form_submit submit">Отправить отзыв</button>
@@ -86,7 +87,7 @@
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__call">#visitsedona</p>
+      <p class="page-footer__call"><a href="#">#visitsedona</a></p>
       <ul class="page-footer__social social__list">
         <li class="social__item">
           <a href="#twitter" class="social__link">Twitter</a>
