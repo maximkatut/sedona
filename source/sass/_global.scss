@@ -5,8 +5,8 @@ html {
 // * {outline: 1px dashed red}
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 

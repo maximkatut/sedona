@@ -2,14 +2,16 @@
   padding: 40px 20px;
   padding-bottom: 300px;
   color: white;
+
   &--real {
     padding-top: 55px;
-    background: url(../img/bg-triangle.svg) 0 -20px no-repeat,
-      url(../img/main-city-mobile@1x.jpg) 0 214px no-repeat,
+    background: url("../img/bg-triangle.svg") 0 -20px no-repeat,
+      url("../img/main-city-mobile@1x.jpg") 0 214px no-repeat,
       $bg-blue;
   }
+
   &--devil {
-    background: url(../img/main-bridge-mobile@1x.jpg) 0 200px no-repeat,
+    background: url("../img/main-bridge-mobile@1x.jpg") 0 200px no-repeat,
       $bg-blue;
   }
 }
