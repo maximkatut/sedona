@@ -1,0 +1,30 @@
+@import "variables";
+@import "global";
+@import "global/normalize";
+@import "global/page-header";
+@import "global/main-nav";
+@import "global/site-list";
+@import "global/intro";
+@import "global/button";
+@import "global/page-footer";
+@import "global/social";
+@import "global/htmlacademy-link";
+
+// index.html
+@import "index/promo";
+@import "index/reason-block";
+@import "index/advantages";
+@import "index/reasons-list";
+@import "index/booking";
+
+// form.html
+@import "form/form";
+@import "form/feedback";
+@import "form/name";
+@import "form/contacts";
+@import "form/effect";
+@import "form/attraction";
+@import "form/emotion";
+
+// photo.html
+@import "photo/media";
