@@ -1,0 +1,40 @@
+.reason-block {
+  padding: 40px 20px;
+  padding-bottom: 300px;
+  color: white;
+}
+
+.reason-block__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.reason-block__order {
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.reason-block__description {
+  margin: 0;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.reason-block--real {
+  padding-top: 55px;
+  background: url(../img/bg-triangle.svg) 0px -20px no-repeat,
+              url(../img/main-city-mobile@1x.jpg) 0px 214px no-repeat,
+              $bg-blue;
+}
+
+.reason-block--devil {
+  background: url(../img/main-bridge-mobile@1x.jpg) 0px 200px no-repeat,
+              $bg-blue;
+}

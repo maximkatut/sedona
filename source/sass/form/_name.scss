@@ -1,0 +1,35 @@
+.name {
+  padding: 0 20px;
+  border: none;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  text-align: left;
+}
+
+.name__title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.name__label {
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.name__input {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  border: none;
+  background-color: $bg-grey;
+}
+
+.name__input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: black;
+}

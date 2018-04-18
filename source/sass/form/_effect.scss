@@ -1,0 +1,29 @@
+.effect {
+  padding: 0 20px;
+  border: none;
+  border-bottom: 1px solid $border-color;
+  text-align: left;
+}
+
+.effect__title {
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.effect__input {
+  display: none;
+}
+
+.effect__label {
+  display: block;
+  margin-bottom: 45px;
+  padding-left: 70px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  color: black;
+}

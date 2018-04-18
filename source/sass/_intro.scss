@@ -1,0 +1,14 @@
+.intro {
+  margin-bottom: 45px;
+  padding: 85px 20px;
+  text-align: center;
+  background: url(../img/bg-intro-triangle-mobile.svg) bottom center/105% no-repeat,
+              url(../img/bg-back-mobile@1x.jpg) no-repeat;
+}
+
+.intro--form,
+.intro--photo {
+  padding: 50px 20px 70px 20px;
+  background: url(../img/bg-intro-triangle-mobile.svg) bottom center/105% no-repeat,
+              url(../img/bg-back-mobile@1x.jpg) bottom no-repeat;
+}
