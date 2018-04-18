@@ -2,6 +2,16 @@
   padding: 40px 20px;
   padding-bottom: 300px;
   color: white;
+  &--real {
+    padding-top: 55px;
+    background: url(../img/bg-triangle.svg) 0 -20px no-repeat,
+      url(../img/main-city-mobile@1x.jpg) 0 214px no-repeat,
+      $bg-blue;
+  }
+  &--devil {
+    background: url(../img/main-bridge-mobile@1x.jpg) 0 200px no-repeat,
+      $bg-blue;
+  }
 }
 
 .reason-block__title {
@@ -25,16 +35,4 @@
   margin: 0;
   line-height: 21px;
   text-transform: uppercase;
-}
-
-.reason-block--real {
-  padding-top: 55px;
-  background: url(../img/bg-triangle.svg) 0px -20px no-repeat,
-              url(../img/main-city-mobile@1x.jpg) 0px 214px no-repeat,
-              $bg-blue;
-}
-
-.reason-block--devil {
-  background: url(../img/main-bridge-mobile@1x.jpg) 0px 200px no-repeat,
-              $bg-blue;
 }

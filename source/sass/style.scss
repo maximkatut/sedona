@@ -1,61 +1,31 @@
-$link-color: white;
-$bg-blue: rgba(#81b3d2, 1);
-$bg-grey: #eeeeee;
-$text-color: #333333;
-$border-color: #e5e5e5;
+@import "variables";
+@import "global";
+@import "global/normalize";
+@import "global/page-header";
+@import "global/main-nav";
+@import "global/site-list";
+@import "global/intro";
+@import "global/button";
+@import "global/page-footer";
+@import "global/social";
+@import "global/htmlacademy-link";
 
-@import 'normalize';
-
-@import 'page-header';
-@import 'intro';
-
-@import 'index/promo';
-@import 'index/reason-block';
-@import 'index/advantages';
-@import 'index/reasons-list';
-@import 'index/booking';
-
-@import 'page-footer';
-@import 'social';
-@import 'htmlacademy-link';
+// index.html
+@import "index/promo";
+@import "index/reason-block";
+@import "index/advantages";
+@import "index/reasons-list";
+@import "index/booking";
 
 // form.html
-@import 'form/form';
-@import 'form/feedback';
-@import 'form/name';
-@import 'form/contacts';
-@import 'form/effect';
-@import 'form/attraction';
-@import 'form/emotion';
+@import "form/form";
+@import "form/feedback";
+@import "form/name";
+@import "form/contacts";
+@import "form/effect";
+@import "form/attraction";
+@import "form/emotion";
 
 // photo.html
-@import 'photo/media';
+@import "photo/media";
 
-html {
-  box-sizing: border-box;
-}
-
-// * {outline: 1px dashed red}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", "Trebuchet MS", sans-serif;
-  font-size: 14px;
-  color: $text-color;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

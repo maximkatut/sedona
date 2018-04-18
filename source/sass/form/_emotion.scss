@@ -19,11 +19,12 @@
   padding: 15px;
   background-color: $bg-grey;
   border: none;
+  &::placeholder {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    color: black;
+  }
 }
 
-.emotion__text::placeholder {
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 26px;
-  color: black;
-}
+

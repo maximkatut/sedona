@@ -1,0 +1,15 @@
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 102px / 2);
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
