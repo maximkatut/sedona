@@ -17,3 +17,40 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .booking {
+    padding: 52px 20px 58px 20px;
+  }
+
+  .booking__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .booking__info {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 43px;
+  }
+
+  .booking__button {
+    width: 63%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .booking {
+    padding-top: 53px;
+    padding-bottom: 67px;
+}
+
+  .booking__info {
+    width: 50%;
+    margin-bottom: 48px;
+  }
+
+  .booking__button {
+    width: 40%;
+  }
+}

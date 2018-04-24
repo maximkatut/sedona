@@ -30,3 +30,43 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .reasons-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .reasons-list__item {
+    width: 256px;
+    padding: 47px 52px 45px 52px;
+  }
+
+  .reasons-list__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  .reasons-list__order {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons-list__item {
+    width: 400px;
+    padding: 47px 52px 64px 52px;
+  }
+
+  .reasons-list__title {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  .reasons-list__order {
+    margin-bottom: 20px;
+  }
+}

@@ -18,3 +18,42 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-bottom: 62px;
+  }
+
+  .feedback__title {
+    margin-bottom: 30px;
+    padding: 0 60px;
+    font-size: 30px;
+    letter-spacing: 0.4px;
+  }
+
+  .feedback__info {
+    margin-bottom: 74px;
+    padding: 0 140px;
+    line-height: 24px;
+  }
+
+  .feedback__form {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin-bottom: 68px;
+  }
+
+  .feedback__info {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .feedback__form {
+    padding: 0 120px;
+  }
+}

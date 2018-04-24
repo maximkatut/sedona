@@ -38,3 +38,50 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .reason-block {
+    padding: 45px 45px;
+    background: none;
+    background-color: $bg-blue;
+
+    &--real {
+      padding-right: 72%;
+    }
+
+    &--devil {
+      padding-left: 72%;
+    }
+  }
+
+  .reason-block__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-block {
+    padding: 53px 65px 58px 65px;
+    background: none;
+    background-color: $bg-blue;
+
+    &--real {
+      padding-right: 72%;
+    }
+
+    &--devil {
+      padding-left: 72%;
+    }
+  }
+
+  .reason-block__title {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  .reason-block__order {
+    margin-bottom: 20px;
+  }
+}

@@ -27,3 +27,48 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .attraction {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+    border: none;
+  }
+
+  .attraction__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+  }
+
+  .attraction__title {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    font-size: 21px;
+  }
+
+  .attraction__label {
+    width: 48%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attraction {
+    margin-bottom: 3px;
+  }
+
+  .attraction__wrapper {
+    margin-left: 0;
+  }
+
+  .attraction__title {
+    width: 30%;
+  }
+
+  .attraction__label {
+    width: 24%;
+  }
+}

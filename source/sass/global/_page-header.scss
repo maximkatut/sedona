@@ -9,3 +9,17 @@
   top: 0;
   left: calc(50% - 102px / 2);
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    margin-bottom: 0;
+  }
+
+  .page-header__logo {
+    top: -59px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

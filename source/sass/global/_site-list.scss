@@ -9,3 +9,29 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .site-list__link {
+    width: 153px;
+    padding: 16px 0;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: transparent;
+    color: $text-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    width: 240px;
+    padding: 16px 0;
+  }
+}

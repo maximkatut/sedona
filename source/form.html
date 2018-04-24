@@ -56,7 +56,9 @@
           </fieldset>
           <fieldset class="form__fieldset contacts">
             <h3 class="contacts__title">Контактная информация:</h3>
-            <label for="phone-number" class="contacts__label">Контактный телефон*:</label>
+            <label for="phone-number" class="contacts__label">
+              <span class="contacts__hidden">Контактный</span> телефон*:
+            </label>
             <input type="text" id="phone-number" placeholder="Введите телефон" class="contacts__input" required>
             <label for="email" class="contacts__label">Электронная почта*:</label>
             <input type="email" id="email" placeholder="Введите e-mail" class="contacts__input" required>
@@ -72,20 +74,23 @@
           </fieldset>
           <fieldset class="form__fieldset attraction">
             <h3 class="attraction__title">Посещенные достопримечательности:</h3>
-            <input type="checkbox" id="devil" value="1" class="attraction__input">
-            <label for="devil" class="attraction__label">Мост Дьявола</label>
-            <input type="checkbox" id="bell" value="2" class="attraction__input">
-            <label for="bell" class="attraction__label">Гора-Колокол</label>
-            <input type="checkbox" id="park" value="3" class="attraction__input">
-            <label for="park" class="attraction__label">Слайд-парк</label>
-            <input type="checkbox" id="rock" value="4" class="attraction__input">
-            <label for="rock" class="attraction__label">Красные скалы</label>
+            <div class="attraction__wrapper">
+              <input type="checkbox" id="devil" value="1" class="attraction__input">
+              <label for="devil" class="attraction__label">Мост Дьявола</label>
+              <input type="checkbox" id="bell" value="2" class="attraction__input">
+              <label for="bell" class="attraction__label">Гора-Колокол</label>
+              <input type="checkbox" id="park" value="3" class="attraction__input">
+              <label for="park" class="attraction__label">Слайд-парк</label>
+              <input type="checkbox" id="rock" value="4" class="attraction__input">
+              <label for="rock" class="attraction__label">Красные скалы</label>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset emotion">
             <h3 class="emotion__title">Опишите свои эмоции:</h3>
             <textarea cols="30" rows="10" placeholder="Опишите подробно все свои восторги" class="emotion__text"></textarea>
           </fieldset>
           <button class="form__button button button--blue">Отправить отзыв</button>
+          <p class="form__required">* — обязательные поля</p>
         </form>
       </section>
     </main>

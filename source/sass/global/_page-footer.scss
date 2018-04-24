@@ -21,3 +21,26 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px 20px 60px;
+  }
+
+  .page-footer__call {
+    margin: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 40px 120px 20px 120px;
+  }
+
+  .page-footer__call {
+    margin-top: 3px;
+  }
+}

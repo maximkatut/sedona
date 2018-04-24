@@ -36,3 +36,41 @@
     color: #000000;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 38px;
+    padding: 0;
+    border: none;
+  }
+
+  .contacts__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-top: 48px;
+    margin-bottom: 34px;
+  }
+
+  .contacts__title {
+    margin-bottom: 64px;
+  }
+
+  .contacts__label {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  .contacts__input {
+    width: 30%;
+  }
+
+  .contacts__hidden {
+    display: none;
+  }
+}

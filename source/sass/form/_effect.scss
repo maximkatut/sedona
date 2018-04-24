@@ -27,3 +27,33 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .effect {
+    order: -1;
+    padding: 0;
+    border: none;
+  }
+
+  .effect__title {
+    margin-top: 0;
+    margin-bottom: 73px;
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .effect__label {
+    margin-bottom: 52px;
+    padding-left: 74px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__title {
+    margin-left: 80px;
+  }
+}

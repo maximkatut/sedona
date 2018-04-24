@@ -1,3 +1,38 @@
 .form__button {
   margin-bottom: 35px;
 }
+
+.form__required {
+  display: none;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset {
+    width: 49%;
+  }
+
+  .form__button {
+    width: 325px;
+    margin: 0;
+  }
+
+  .form__required {
+    margin-top: 25px;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    width: 480px;
+    margin: 0;
+  }
+}

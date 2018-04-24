@@ -27,3 +27,33 @@
     color: #000000;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .emotion {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .emotion__title {
+    margin-bottom: 55px;
+    font-size: 21px;
+  }
+
+  .emotion__text {
+    height: 11.5em;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotion__title {
+    margin-bottom: 55px;
+    font-size: 21px;
+  }
+
+  .emotion__text {
+    height: 11.5em;
+    margin-bottom: 54px;
+  }
+}
