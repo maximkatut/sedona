@@ -19,10 +19,42 @@
   padding: 15px;
   background-color: $bg-grey;
   border: none;
+
   &::placeholder {
     font-size: 18px;
     font-weight: 800;
     line-height: 26px;
     color: #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .emotion {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .emotion__title {
+    margin-bottom: 55px;
+    font-size: 21px;
+  }
+
+  .emotion__text {
+    height: 11.5em;
+    margin-bottom: 54px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotion__title {
+    margin-bottom: 55px;
+    font-size: 21px;
+  }
+
+  .emotion__text {
+    height: 11.5em;
+    margin-bottom: 54px;
   }
 }

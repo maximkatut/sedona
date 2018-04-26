@@ -25,13 +25,69 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
-  padding: 20px 20px;
+  padding: 21px;
   border: none;
   background-color: $bg-grey;
+
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     font-weight: 800;
     color: #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 33px;
+    padding: 0;
+    border: none;
+  }
+
+  .contacts__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 54px;
+  }
+
+  .contacts__container {
+    display: flex;
+  }
+
+  .contacts__title {
+    margin-bottom: 73px;
+  }
+
+  .contacts__wrapper {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .contacts__label {
+    padding-left: 0;
+    padding-right: 15px;
+    margin: 0;
+  }
+
+  .contacts__input {
+    width: 66%;
+    margin: 0;
+  }
+
+  .contacts__hidden {
+    display: none;
   }
 }

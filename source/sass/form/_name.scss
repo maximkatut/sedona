@@ -15,14 +15,21 @@
   text-align: center;
 }
 
+.name__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
 .name__label {
+  margin-right: 13px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
 .name__input {
-  margin-bottom: 20px;
-  padding: 20px 20px;
+  width: 100%;
+  padding: 21px;
   border: none;
   background-color: $bg-grey;
 
@@ -31,5 +38,32 @@
     line-height: 26px;
     font-weight: 800;
     color: #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .name {
+    width: 50%;
+    border: none;
+    border-left: 1px solid $border-color;
+    padding: 0;
+    padding-left: 57px;
+  }
+
+  .name__title {
+    margin-top: 0;
+    margin-bottom: 56px;
+    text-align: left;
+    font-size: 21px;
+  }
+
+  .name__input {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name {
+    padding-left: 80px;
   }
 }

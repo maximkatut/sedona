@@ -27,3 +27,52 @@
   line-height: 26px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .attraction {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .attraction__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .attraction__title {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    font-size: 21px;
+  }
+
+  .attraction__label {
+    width: 50%;
+    margin-bottom: 62px;
+    padding-left: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attraction__wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .attraction__title {
+    width: 30%;
+  }
+
+  .attraction__label {
+    width: 20%;
+    text-align: right;
+    padding-left: 0;
+
+    &[for="park"] {
+      padding-right: 14px;
+    }
+  }
+}

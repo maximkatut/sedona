@@ -1,5 +1,7 @@
 .page-header__wrapper {
   position: relative;
+  margin-bottom: 34px;
+  text-align: right;
 }
 
 .page-header__logo {
@@ -8,8 +10,16 @@
   left: calc(50% - 102px / 2);
 }
 
-.page-header__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    margin-bottom: 0;
+  }
+
+  .page-header__logo {
+    top: -56px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }

@@ -1,3 +1,45 @@
-.form__button {
-  margin-bottom: 35px;
+.form {
+  padding-bottom: 35px;
+}
+
+.form__required {
+  display: none;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset {
+    margin: 0;
+  }
+
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__button {
+    width: 50%;
+  }
+
+  .form__required {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 35px;
+  }
+
+  .form__button {
+    width: 480px;
+  }
 }

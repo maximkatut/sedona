@@ -1,15 +1,42 @@
 .intro {
-  margin-top: 56px;
   margin-bottom: 45px;
   padding: 85px 20px;
   text-align: center;
   background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    url("../img/bg-back-mobile@1x.jpg") no-repeat,
+    $bg-intro;
 
   &--form,
   &--photo {
     padding: 50px 20px 70px 20px;
     background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
-      url("../img/bg-back-mobile@1x.jpg") bottom no-repeat;
+      url("../img/bg-back-mobile@1x.jpg") bottom no-repeat,
+      $bg-intro;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding: 75px 20px 87px 20px;
+    margin-bottom: 52px;
+    background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat,
+      $bg-intro;
+
+    &--form,
+    &--photo {
+      margin-bottom: 76px;
+      padding: 94px 60px 113px 60px;
+    }
+  }
+
+  .intro__image {
+    width: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    margin-bottom: 125px;
   }
 }
