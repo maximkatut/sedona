@@ -47,21 +47,33 @@
         <form method="post" action="https://echo.htmlacademy.ru" class="feedback__form form">
           <fieldset class="form__fieldset name">
             <h3 class="name__title">Представьтесь:</h3>
-            <label for="first-name" class="name__label ">Имя*:</label>
-            <input type="text" id="first-name" placeholder="Петр" class="name__input" required>
-            <label for="last-name" class="name__label ">Фамилия*:</label>
-            <input type="text" id="last-name" placeholder="Иванов" class="name__input" required>
-            <label for="middle-name" class="name__label ">Отчество:</label>
-            <input type="text" id="middle-name" placeholder="Александрович" class="name__input">
+            <div class="name__wrapper">
+              <label for="first-name" class="name__label ">Имя*:</label>
+              <input type="text" id="first-name" placeholder="Петр" class="name__input" required>
+            </div>
+            <div class="name__wrapper">
+              <label for="last-name" class="name__label ">Фамилия*:</label>
+              <input type="text" id="last-name" placeholder="Иванов" class="name__input" required>
+            </div>
+            <div class="name__wrapper">
+              <label for="middle-name" class="name__label ">Отчество: </label>
+              <input type="text" id="middle-name" placeholder="Александрович" class="name__input">
+            </div>
           </fieldset>
           <fieldset class="form__fieldset contacts">
             <h3 class="contacts__title">Контактная информация:</h3>
-            <label for="phone-number" class="contacts__label">
-              <span class="contacts__hidden">Контактный</span> телефон*:
-            </label>
-            <input type="text" id="phone-number" placeholder="Введите телефон" class="contacts__input" required>
-            <label for="email" class="contacts__label">Электронная почта*:</label>
-            <input type="email" id="email" placeholder="Введите e-mail" class="contacts__input" required>
+            <div class="contacts__container">
+              <div class="contacts__wrapper">
+                <label for="phone-number" class="contacts__label">
+                  <span class="contacts__hidden">Контактный</span> телефон*:
+                </label>
+                <input type="text" id="phone-number" placeholder="Введите телефон" class="contacts__input" required>
+              </div>
+              <div class="contacts__wrapper">
+                <label for="email" class="contacts__label">Электронная почта*:</label>
+                <input type="email" id="email" placeholder="Введите e-mail" class="contacts__input" required>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset effect">
             <h3 class="effect__title">Ваше общее впечатление:</h3>
@@ -89,8 +101,10 @@
             <h3 class="emotion__title">Опишите свои эмоции:</h3>
             <textarea cols="30" rows="10" placeholder="Опишите подробно все свои восторги" class="emotion__text"></textarea>
           </fieldset>
-          <button class="form__button button button--blue">Отправить отзыв</button>
-          <p class="form__required">* — обязательные поля</p>
+          <div class="form__wrapper">
+            <button class="form__button button button--blue">Отправить отзыв</button>
+            <p class="form__required">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

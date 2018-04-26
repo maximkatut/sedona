@@ -46,11 +46,12 @@
     background-color: $bg-blue;
 
     &--real {
-      padding-right: 72%;
+      width: 33.3%;
     }
 
     &--devil {
-      padding-left: 72%;
+      width: 33.3%;
+      margin-left: auto;
     }
   }
 
@@ -64,14 +65,6 @@
     padding: 53px 65px 58px 65px;
     background: none;
     background-color: $bg-blue;
-
-    &--real {
-      padding-right: 72%;
-    }
-
-    &--devil {
-      padding-left: 72%;
-    }
   }
 
   .reason-block__title {
