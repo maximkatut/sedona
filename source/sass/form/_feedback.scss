@@ -3,7 +3,7 @@
 }
 
 .feedback__title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   padding: 0 20px;
   font-size: 18px;
   font-weight: 800;
@@ -13,9 +13,9 @@
 
 .feedback__info {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding: 0 20px;
-  line-height: 26px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -28,6 +28,8 @@
   }
 
   .feedback__info {
+    width: 94%;
+    margin: 0 auto;
     margin-bottom: 74px;
     padding: 0 140px;
     line-height: 24px;
@@ -48,6 +50,6 @@
 
   .feedback__form {
     padding: 0 120px;
-    padding-bottom: 68px;
+    padding-bottom: 65px;
   }
 }

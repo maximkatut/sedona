@@ -1,17 +1,29 @@
 .advantages {
   margin: 0;
-  padding: 40px 20px;
+  padding: 36px 20px;
   list-style: none;
   text-align: left;
 }
 
 .advantages__item {
   padding-left: 50px;
+
+  &--second {
+    br {
+      display: none;
+    }
+  }
+
+  &--third {
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -19,7 +31,7 @@
 
 .advantages__descriptions {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   line-height: 21px;
   text-transform: uppercase;
 }
@@ -32,20 +44,32 @@
   .advantages {
     display: flex;
     justify-content: space-around;
-    padding: 65px 0 60px 0;
+    padding: 62px 0;
     text-align: center;
   }
 
   .advantages__item {
-    width: 33.3%;
-    padding: 98px 35px 0 35px;
+    width: calc(100% / 3);
+    padding: 98px 45px;
+    padding-bottom: 0;
+
+    &--second {
+      padding: 98px 20px;
+      padding-bottom: 0;
+
+      br {
+        display: inline;
+      }
+    }
 
     &--third {
       order: 1;
+      padding: 98px 36px 0 36px;
     }
   }
 
   .advantages__title {
+    margin-bottom: 20px;
     font-size: 21px;
   }
 
@@ -60,7 +84,12 @@
   }
 
   .advantages__item {
-    width: 400px;
     padding: 96px 55px 0 55px;
+
+    &--third {
+      br {
+        display: inline;
+      }
+    }
   }
 }

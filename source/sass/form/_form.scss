@@ -1,5 +1,10 @@
 .form {
-  padding-bottom: 35px;
+  padding-bottom: 42px;
+}
+
+.form__button {
+  margin: 0 auto;
+  width: 87.5%;
 }
 
 .form__required {
@@ -23,23 +28,22 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 2px;
   }
 
   .form__button {
     width: 50%;
+    margin: 0;
   }
 
   .form__required {
     display: block;
+    margin-top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
     padding-bottom: 35px;
-  }
-
-  .form__button {
-    width: 480px;
   }
 }

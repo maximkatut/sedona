@@ -5,12 +5,18 @@
 }
 
 .reasons-list__item {
-  padding: 30px 15px;
+  padding: 28px 15px;
+
+  &--third {
+    br {
+      display: none;
+    }
+  }
 }
 
 .reasons-list__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   padding: 0;
   font-size: 18px;
   font-weight: 800;
@@ -39,34 +45,47 @@
   }
 
   .reasons-list__item {
-    width: 33.3%;
-    padding: 47px 52px 45px 52px;
+    width: calc(100% / 3);
+    padding: 46px 40px;
+
+    &--second {
+      padding: 46px 55px;
+    }
+
+    &--third {
+      br {
+        display: inline;
+      }
+    }
   }
 
   .reasons-list__title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 21px;
   }
 
   .reasons-list__order {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reasons-list__item {
-    width: 400px;
-    padding: 47px 52px 64px 52px;
+    padding: 46px 40px 65px 40px;
+
+    &--second {
+      padding: 46px 60px;
+    }
   }
 
   .reasons-list__title {
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 21px;
   }
 
   .reasons-list__order {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }

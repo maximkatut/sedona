@@ -1,5 +1,5 @@
 .name {
-  padding: 0 20px;
+  padding: 1px 20px;
   border: none;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
@@ -7,7 +7,7 @@
 }
 
 .name__title {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   font-size: 18px;
   font-weight: 800;
   line-height: 26px;
@@ -19,6 +19,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 19px;
+
+  &:last-child {
+    margin-bottom: 22px;
+  }
 }
 
 .name__label {
@@ -29,14 +33,14 @@
 
 .name__input {
   width: 100%;
-  padding: 21px;
+  padding: 16.5px 22px;
   border: none;
   background-color: $bg-grey;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
 
   &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 800;
     color: #000000;
   }
 }

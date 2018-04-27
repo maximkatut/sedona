@@ -1,7 +1,7 @@
 .social {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 54%;
   margin: 0 auto;
   margin-bottom: 40px;
   list-style: none;
@@ -9,10 +9,21 @@
 
 .social__link {
   display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $bg-blue;
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {
   .social {
-    width: auto;
+    width: 160.7px;
+    margin-bottom: 0;
+  }
+
+  .social__item {
+    &:last-child {
+      margin-right: 10px;
+    }
   }
 }

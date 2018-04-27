@@ -5,17 +5,21 @@
 
 .booking__title {
   margin: 0;
-  margin-bottom: 30px;
-  font-size: 18px;
+  margin-bottom: 19px;
+  font-size: 21px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .booking__info {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   line-height: 24px;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -32,10 +36,15 @@
     width: 65%;
     margin: 0 auto;
     margin-bottom: 43px;
+
+    br {
+      display: inline;
+    }
   }
 
   .booking__button {
     width: 63%;
+    margin: 0 auto;
   }
 }
 

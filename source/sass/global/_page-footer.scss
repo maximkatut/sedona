@@ -1,12 +1,12 @@
 .page-footer {
-  padding: 40px 20px 20px 20px;
+  padding: 33px 20px 20px 20px;
   text-align: center;
   background-color: $bg-white;
 }
 
 .page-footer__call {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .page-footer__link {
@@ -27,18 +27,18 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px 20px 60px;
+    align-items: center;
+    padding: 33px 60px;
   }
 
   .page-footer__call {
     margin: 0;
-    margin-top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 40px 120px 20px 120px;
+    padding: 33px 120px;
   }
 
   .page-footer__call {

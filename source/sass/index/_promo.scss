@@ -5,7 +5,7 @@
 .promo__title {
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
@@ -16,7 +16,7 @@
 
 .promo__subtitle {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   padding: 0 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .promo__title {
     width: 75%;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     padding-left: 60px;
     padding-right: 60px;
     font-size: 21px;
@@ -37,6 +37,7 @@
 
   .promo__subtitle {
     margin-bottom: 50px;
+    letter-spacing: 0.07px;
     padding: 0 60px;
   }
 
