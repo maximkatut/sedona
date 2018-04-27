@@ -6,7 +6,7 @@
 }
 
 .attraction__title {
-  margin-bottom: 45px;
+  margin-bottom: 31px;
   font-size: 18px;
   font-weight: 800;
   line-height: 26px;
@@ -20,12 +20,16 @@
 
 .attraction__label {
   display: block;
-  margin-bottom: 45px;
-  padding-left: 70px;
+  margin-bottom: 54px;
+  padding-left: 77px;
   font-size: 18px;
   font-weight: 800;
   line-height: 26px;
   color: #000000;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {

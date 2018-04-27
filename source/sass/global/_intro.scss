@@ -1,6 +1,6 @@
 .intro {
-  margin-bottom: 45px;
-  padding: 85px 20px;
+  margin-bottom: 42px;
+  padding: 90px 20px 81px 20px;
   text-align: center;
   background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
     url("../img/bg-back-mobile@1x.jpg") no-repeat,
@@ -8,7 +8,8 @@
 
   &--form,
   &--photo {
-    padding: 50px 20px 70px 20px;
+    margin-bottom: 38px;
+    padding: 50px 20px 65px 20px;
     background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
       url("../img/bg-back-mobile@1x.jpg") bottom no-repeat,
       $bg-intro;
@@ -17,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding: 75px 20px 87px 20px;
+    padding: 80px 20px 87px 20px;
     margin-bottom: 52px;
     background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
       url("../img/bg-back-tablet@1x.jpg") no-repeat,
@@ -37,6 +38,12 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-bottom: 125px;
+    margin-bottom: 52px;
+
+    &--form,
+    &--photo {
+      padding: 102px 20px 116px 20px;
+      margin-bottom: 113px;
+    }
   }
 }

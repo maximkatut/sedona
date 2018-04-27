@@ -1,5 +1,5 @@
 .contacts {
-  padding: 0 20px;
+  padding: 0 20px 16px 20px;
   border: none;
   border-bottom: 1px solid $border-color;
   text-align: left;
@@ -15,7 +15,6 @@
 }
 
 .contacts__label {
-  margin-bottom: 20px;
   padding-left: 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -23,16 +22,16 @@
 
 .contacts__input {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 21px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  padding: 18px 20px 14px 20px;
   border: none;
   background-color: $bg-grey;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
 
   &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 800;
     color: #000000;
   }
 }
@@ -40,7 +39,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 100%;
-    margin-top: 55px;
+    margin-top: 48px;
     margin-bottom: 33px;
     padding: 0;
     border: none;
@@ -48,8 +47,12 @@
 
   .contacts__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 21px;
+  }
+
+  .contacts__input {
+    margin-bottom: 22px;
   }
 }
 
@@ -57,7 +60,7 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-bottom: 54px;
   }
 
@@ -66,7 +69,7 @@
   }
 
   .contacts__title {
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 
   .contacts__wrapper {
