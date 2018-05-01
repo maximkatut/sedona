@@ -5,15 +5,28 @@
 
   &--real {
     padding-top: 58px;
-    background: url("../img/bg-triangle.svg") 0 -20px no-repeat,
-      url("../img/main-city-mobile@1x.jpg") 0 211px no-repeat,
-      $bg-blue;
+    background-color: $bg-blue;
+    background-image: url("../img/bg-triangle.svg"), url("../img/main-city-tablet@1x.jpg");
+    background-position: center -20px, center bottom;
+    background-size: 102%, auto 55.5%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-triangle.svg"), url("../img/main-city-tablet@2x.jpg");
+    }
   }
 
   &--devil {
     padding-bottom: 298px;
-    background: url("../img/main-bridge-mobile@1x.jpg") 0 191px no-repeat,
-      $bg-blue;
+    background-color: $bg-blue;
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+    background-position: center bottom;
+    background-size: auto 58%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
+    }
 
     br {
       display: none;
@@ -32,10 +45,31 @@
 }
 
 .reason-block__order {
+  position: relative;
   margin: 0;
   margin-bottom: 15px;
   line-height: 21px;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 115px;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 156px;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+  }
 }
 
 .reason-block__description {
@@ -76,14 +110,20 @@
 
   .reason-block__order {
     margin-bottom: 21px;
+
+    &::before {
+      left: 57px;
+    }
+
+    &::after {
+      left: 98px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .reason-block {
     padding: 53px 65px 58px 65px;
-    background: none;
-    background-color: $bg-blue;
 
     &--devil {
       padding: 53px 75px 58px 75px;
@@ -91,6 +131,18 @@
       & .reason-block__description {
         br {
           display: inline;
+        }
+      }
+
+      & .reason-block__order {
+        &::before {
+          top: 9px;
+          left: 100px;
+        }
+
+        &::after {
+          top: 9px;
+          left: 141px;
         }
       }
     }
@@ -105,5 +157,15 @@
 
   .reason-block__order {
     margin-bottom: 20px;
+
+    &::before {
+      top: 8px;
+      left: 109px;
+    }
+
+    &::after {
+      top: 8px;
+      left: 150px;
+    }
   }
 }

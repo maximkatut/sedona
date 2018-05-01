@@ -1,0 +1,15 @@
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 27px / 2);
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
+}

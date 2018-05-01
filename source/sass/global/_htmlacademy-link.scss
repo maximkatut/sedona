@@ -1,12 +1,27 @@
 .htmlacademy-link {
-  margin-top: 2px;
+  margin-top: 6px;
   text-transform: uppercase;
   text-decoration: none;
   color: $text-color;
+
+  &:hover .htmlacademy-link__img {
+    fill: #88b6d1;
+  }
+
+  &:active .htmlacademy-link__img {
+    fill: rgba(#000000, 0.3);
+  }
 }
 
 .htmlacademy-link__text {
-  margin-right: 10px;
   line-height: 36px;
+  margin-right: 5px;
   vertical-align: top;
+}
+
+.htmlacademy-link__img {
+  margin-top: -1px;
+  margin-right: -8px;
+  width: 40px;
+  fill: #000000;
 }

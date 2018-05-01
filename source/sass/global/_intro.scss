@@ -2,17 +2,21 @@
   margin-bottom: 42px;
   padding: 90px 20px 81px 20px;
   text-align: center;
-  background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat,
-    $bg-intro;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center;
+  background-size: 105%, cover;
+  background-repeat: no-repeat;
+  background-color: $bg-intro;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
 
   &--form,
   &--photo {
     margin-bottom: 38px;
     padding: 50px 20px 65px 20px;
-    background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
-      url("../img/bg-back-mobile@1x.jpg") bottom no-repeat,
-      $bg-intro;
+    background-size: 105%, auto;
   }
 }
 
@@ -20,9 +24,12 @@
   .intro {
     padding: 80px 20px 87px 20px;
     margin-bottom: 52px;
-    background: url("../img/bg-intro-triangle-mobile.svg") bottom center/105% no-repeat,
-      url("../img/bg-back-tablet@1x.jpg") no-repeat,
-      $bg-intro;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: 100%, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+    }
 
     &--form,
     &--photo {
@@ -39,6 +46,12 @@
 @media (min-width: $desktop-width) {
   .intro {
     margin-bottom: 52px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    background-size: 100%, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+    }
 
     &--form,
     &--photo {

@@ -15,9 +15,29 @@
 }
 
 .contacts__label {
+  position: relative;
   padding-left: 20px;
   line-height: 26px;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 220px;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-image: url("../img/icon-phone.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &[for="email"] {
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
 }
 
 .contacts__input {
@@ -33,6 +53,15 @@
 
   &::placeholder {
     color: #000000;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: transparent;
+    outline: 4px solid #e5e5e5;
   }
 }
 
@@ -53,6 +82,12 @@
 
   .contacts__input {
     margin-bottom: 22px;
+  }
+
+  .contacts__label {
+    &::after {
+      left: 590px;
+    }
   }
 }
 
@@ -83,6 +118,17 @@
     padding-left: 0;
     padding-right: 15px;
     margin: 0;
+
+    &::after {
+      top: -17px;
+      left: 342px;
+    }
+
+    &[for="email"] {
+      &::after {
+        left: 422px;
+      }
+    }
   }
 
   .contacts__input {
