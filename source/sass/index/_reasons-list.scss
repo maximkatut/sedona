@@ -25,10 +25,31 @@
 }
 
 .reasons-list__order {
+  position: relative;
   margin: 0;
   margin-bottom: 15px;
   line-height: 21px;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 9px;
+    height: 2px;
+    background-color: $text-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 141px;
+    width: 9px;
+    height: 2px;
+    background-color: $text-color;
+  }
 }
 
 .reasons-list__description {
@@ -50,6 +71,18 @@
 
     &--second {
       padding: 46px 55px;
+
+      & .reasons-list__order {
+        &::before {
+          top: 11px;
+          left: 48px;
+        }
+
+        &::after {
+          top: 11px;
+          left: 90px;
+        }
+      }
     }
 
     &--third {
@@ -66,6 +99,16 @@
 
   .reasons-list__order {
     margin-bottom: 21px;
+
+    &::before {
+      top: 11px;
+      left: 64px;
+    }
+
+    &::after {
+      top: 11px;
+      left: 105px;
+    }
   }
 }
 
@@ -75,6 +118,16 @@
 
     &--second {
       padding: 46px 60px;
+
+      & .reasons-list__order {
+        &::before {
+          left: 115px;
+        }
+
+        &::after {
+          left: 156px;
+        }
+      }
     }
   }
 
@@ -87,5 +140,15 @@
 
   .reasons-list__order {
     margin-bottom: 21px;
+
+    &::before {
+      top: 10px;
+      left: 134px;
+    }
+
+    &::after {
+      top: 10px;
+      left: 175px;
+    }
   }
 }

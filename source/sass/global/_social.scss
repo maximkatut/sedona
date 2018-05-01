@@ -1,7 +1,7 @@
 .social {
   display: flex;
   justify-content: space-between;
-  width: 54%;
+  width: 150px;
   margin: 0 auto;
   margin-bottom: 40px;
   list-style: none;
@@ -13,6 +13,32 @@
   height: 48px;
   background-color: $bg-blue;
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & .social__twitter,
+    & .social__facebook,
+    & .social__youtube {
+      fill: #88b6d1;
+    }
+  }
+}
+
+.social__twitter,
+.social__facebook,
+.social__youtube {
+  fill: #ffffff;
+  margin-top: 16px;
+}
+
+.social__facebook {
+  margin-top: 13px;
 }
 
 @media (min-width: $tablet-width) {

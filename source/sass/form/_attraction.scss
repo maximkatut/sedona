@@ -14,11 +14,8 @@
   text-align: center;
 }
 
-.attraction__input {
-  display: none;
-}
-
 .attraction__label {
+  position: relative;
   display: block;
   margin-bottom: 54px;
   padding-left: 77px;
@@ -29,6 +26,52 @@
 
   &:last-child {
     margin-bottom: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -1px;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+  }
+}
+
+.attraction__input {
+  display: none;
+
+  &:checked {
+    & + .attraction__label::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      width: 23px;
+      height: 16px;
+      background-image: url("../img/icon-tick.svg");
+    }
+  }
+
+  &:active {
+    & + .attraction__label::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -57,6 +100,22 @@
     width: 50%;
     margin-bottom: 62px;
     padding-left: 110px;
+
+    &::before {
+      top: -16px;
+      left: 29px;
+    }
+  }
+
+  .attraction__input {
+    display: none;
+
+    &:checked {
+      & + .attraction__label::after {
+        top: 4px;
+        left: 47px;
+      }
+    }
   }
 }
 
@@ -77,6 +136,34 @@
 
     &[for="park"] {
       padding-right: 14px;
+    }
+
+    &::before {
+      left: 1px;
+    }
+  }
+
+  .attraction__input {
+    display: none;
+
+    &:checked {
+      & + .attraction__label::after {
+        left: 19px;
+      }
+    }
+  }
+
+  .attraction__label[for="rock"] {
+    &::before {
+      left: -14px;
+    }
+  }
+
+  .attraction__input[id="rock"] {
+    &:checked {
+      & + .attraction__label::after {
+        left: 5px;
+      }
     }
   }
 }
