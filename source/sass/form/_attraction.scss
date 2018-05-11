@@ -73,6 +73,12 @@
       opacity: 0.3;
     }
   }
+
+  &:disabled {
+    & + .attraction__label::before {
+      background-color: #d5d5d5;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -92,18 +98,19 @@
   .attraction__title {
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
     font-size: 21px;
+    letter-spacing: 0.1px;
   }
 
   .attraction__label {
     width: 50%;
     margin-bottom: 62px;
-    padding-left: 110px;
+    padding-left: 111px;
 
     &::before {
-      top: -16px;
-      left: 29px;
+      top: -15px;
+      left: 30px;
     }
   }
 
@@ -113,7 +120,7 @@
     &:checked {
       & + .attraction__label::after {
         top: 4px;
-        left: 47px;
+        left: 48px;
       }
     }
   }
@@ -123,23 +130,25 @@
   .attraction__wrapper {
     width: 100%;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .attraction__title {
     width: 30%;
+    margin-bottom: 55px;
   }
 
   .attraction__label {
-    width: 20%;
-    text-align: right;
-    padding-left: 0;
+    width: auto;
+    padding: 0;
+    margin-right: 148.5px;
 
-    &[for="park"] {
-      padding-right: 14px;
+    &[for="devil"] {
+      margin-left: 80px;
     }
 
     &::before {
-      left: 1px;
+      left: -80px;
     }
   }
 
@@ -148,21 +157,24 @@
 
     &:checked {
       & + .attraction__label::after {
-        left: 19px;
+        top: 6px;
+        left: -62px;
       }
     }
   }
 
   .attraction__label[for="rock"] {
+    margin-right: 0;
+
     &::before {
-      left: -14px;
+      left: -79px;
     }
   }
 
   .attraction__input[id="rock"] {
     &:checked {
       & + .attraction__label::after {
-        left: 5px;
+        left: -60px;
       }
     }
   }

@@ -34,7 +34,7 @@
 
 .media__item {
   width: 100%;
-  padding: 21px 20px 13px 20px;
+  padding: 21px 20px 14px 20px;
   border-bottom: 1px solid $border-color;
 }
 
@@ -79,10 +79,15 @@
 
 .media__video {
   position: relative;
+
+  & .media__header {
+    margin-top: 33px;
+    margin-bottom: 26px;
+  }
 }
 
 .media__video-presentation {
-  margin-top: 7px;
+  margin-top: 8px;
   margin-bottom: 106px;
   width: 100%;
   height: 201px;
@@ -107,14 +112,14 @@
   }
 
   .media__header {
-    margin-bottom: 28px;
+    margin-bottom: 31px;
     font-size: 30px;
   }
 
   .media__info {
     width: 75%;
     margin-bottom: 68px;
-    line-height: 25px;
+    line-height: 24px;
 
     br {
       display: inline;
@@ -152,6 +157,7 @@
 
   .media__title {
     margin: 0;
+    margin-top: 1px;
     margin-left: 20px;
   }
 
@@ -163,22 +169,28 @@
 
   .media__like {
     position: absolute;
-    bottom: 25px;
-    right: 26px;
+    bottom: 24px;
+    left: 73%;
 
     &::before {
       left: 4px;
     }
 
     &--big {
-      right: 15px;
+      left: 86.5%;
+    }
+  }
+
+  .media__video {
+    & .media__header {
+      margin-bottom: 30px;
     }
   }
 
   .media__video-presentation {
     width: 100%;
     height: 500px; // vremenno
-    margin-top: 3px;
+    margin-top: 5px;
     margin-bottom: 39px;
     background-image: url("../img/video-tablet@1x.jpg");
 
@@ -195,7 +207,7 @@
 
   .media__info {
     width: 40%;
-    margin-bottom: 69px;
+    margin-bottom: 72px;
   }
 
   .media__item {
@@ -219,12 +231,13 @@
   }
 
   .media__title {
+    margin-top: 0;
     color: #ffffff;
   }
 
   .media__author {
     color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
 
   .media__wrapper {
@@ -237,20 +250,20 @@
 
   .media__like {
     color: #ffffff;
-    bottom: 23px;
-    right: 23px;
+    bottom: 26px;
+    left: 78%;
 
     &::before {
       background-image: url("../img/icon-like-white.svg");
     }
 
     &--big {
-      right: 15px;
+      left: 92.5%;
     }
   }
 
   .media__video {
-    margin-top: 73px;
+    margin-top: 69px;
     padding-bottom: 46px;
   }
 

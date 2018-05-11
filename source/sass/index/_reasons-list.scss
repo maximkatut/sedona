@@ -5,9 +5,13 @@
 }
 
 .reasons-list__item {
-  padding: 28px 15px;
+  padding: 28px 15px 27px 15px;
+  border-bottom: 1px solid #e5e5e5;
 
   &--third {
+    padding: 28px 15px 28px 15px;
+    border: none;
+
     br {
       display: none;
     }
@@ -68,6 +72,7 @@
   .reasons-list__item {
     width: calc(100% / 3);
     padding: 46px 40px;
+    border: none;
 
     &--second {
       padding: 46px 55px;

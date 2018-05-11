@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback__title {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding: 0 60px;
     font-size: 30px;
     letter-spacing: 0.4px;
@@ -33,11 +33,12 @@
     margin-bottom: 74px;
     padding: 0 140px;
     line-height: 24px;
+    letter-spacing: 0.1px;
   }
 
   .feedback__form {
     padding: 0 60px;
-    padding-bottom: 62px;
+    padding-bottom: 63px;
   }
 }
 
@@ -46,10 +47,11 @@
     width: 60%;
     margin: 0 auto;
     margin-bottom: 60px;
+    letter-spacing: 0.05px;
   }
 
   .feedback__form {
     padding: 0 120px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 }
