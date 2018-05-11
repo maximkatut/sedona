@@ -6,7 +6,7 @@
 
 .page-footer__call {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .page-footer__link {
@@ -28,20 +28,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 33px 60px;
+    padding: 34px 60px;
   }
 
   .page-footer__call {
     margin: 0;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 33px 120px;
+    padding: 32px 120px;
   }
 
   .page-footer__call {
-    margin-top: 3px;
+    padding-right: 18px;
   }
 }

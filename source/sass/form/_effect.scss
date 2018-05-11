@@ -70,6 +70,12 @@
       background-color: #a4a4a4;
     }
   }
+
+  &:disabled {
+    & + .effect__label::before {
+      background-color: #d5d5d5;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -82,14 +88,14 @@
 
   .effect__title {
     margin-top: 0;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
     font-size: 21px;
     text-align: left;
   }
 
   .effect__label {
     margin-bottom: 52px;
-    padding-left: 74px;
+    padding-left: 75px;
 
     &:last-child {
       margin-bottom: 0;
@@ -100,6 +106,7 @@
 @media (min-width: $desktop-width) {
   .effect__title {
     margin-left: 80px;
+    margin-bottom: 73px;
   }
 
   .effect__label {

@@ -65,7 +65,7 @@
 
   .name__title {
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
     text-align: left;
     font-size: 21px;
   }
@@ -78,5 +78,9 @@
 @media (min-width: $desktop-width) {
   .name {
     padding-left: 80px;
+  }
+
+  .name__title {
+    margin-bottom: 57px;
   }
 }
