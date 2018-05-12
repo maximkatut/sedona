@@ -1,6 +1,6 @@
 .map {
+  min-width: 320px;
   position: relative;
-  width: auto;
   height: 350px;
 
   &::before {
@@ -13,5 +13,13 @@
     height: 27px;
     background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 320px) {
+  .map {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
   }
 }

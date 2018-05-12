@@ -206,7 +206,6 @@
   }
 
   .media__info {
-    width: 40%;
     margin-bottom: 72px;
   }
 
@@ -222,11 +221,11 @@
   }
 
   .media__image {
-    height: 267px; // временно
+    height: 267px;
     margin-bottom: 0;
 
     &--big {
-      height: 400px; // временно
+      height: 400px;
     }
   }
 

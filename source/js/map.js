@@ -1,6 +1,7 @@
 "use strict";
 
 var ZOOM = 7;
+var MIN_WIDTH = 320;
 var isIE11 = !!(navigator.userAgent.match(/Trident/) && navigator.userAgent.match(/rv[ :]11/));
 var image;
 var mapBlock = document.querySelector('.map');
@@ -10,6 +11,19 @@ if (isIE11) {
 } else {
   image = "img/icon-map-marker.svg";
 }
+
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth < MIN_WIDTH) {
+    mapBlock.style.width = "100%";
+    mapBlock.style.marginLeft = "0";
+    mapBlock.style.left = "0";
+  }
+
+  if (window.innerWidth > MIN_WIDTH) {
+    setStyleMap();
+  }
+});
 
 function setStyleMap() {
   mapBlock.style.width = "99.225vw";
