@@ -155,6 +155,11 @@
     }
   }
 
+  .media__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .media__title {
     margin: 0;
     margin-top: 1px;
@@ -168,16 +173,20 @@
   }
 
   .media__like {
-    position: absolute;
-    bottom: 24px;
-    left: 73%;
+    width: 110px;
+    margin-bottom: 13px;
 
     &::before {
-      left: 4px;
+      top: 14px;
+      left: 25px;
     }
 
     &--big {
-      left: 86.5%;
+      width: 100px;
+
+      &::before {
+        left: 15px;
+      }
     }
   }
 
@@ -222,11 +231,11 @@
   }
 
   .media__image {
-    height: 267px; // временно
+    height: 267px;
     margin-bottom: 0;
 
     &--big {
-      height: 400px; // временно
+      height: 400px;
     }
   }
 
@@ -250,15 +259,10 @@
 
   .media__like {
     color: #ffffff;
-    bottom: 26px;
-    left: 78%;
 
     &::before {
       background-image: url("../img/icon-like-white.svg");
-    }
-
-    &--big {
-      left: 92.5%;
+      top: 13px;
     }
   }
 

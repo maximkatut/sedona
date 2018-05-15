@@ -2,8 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-// * {outline: 1px dashed red}
-
 *,
 *::before,
 *::after {
@@ -11,6 +9,7 @@ html {
 }
 
 body {
+  min-width: $mobile-width;
   max-width: $mobile-width;
   margin: 0 auto;
   padding: 0;

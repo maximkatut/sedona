@@ -28,14 +28,14 @@
               <a class="site-list__link site-list__link--active">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="http://htmlacademy.ru">Html academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
           <button class="main-nav__close">Закрыть меню</button>
         </div>
       </nav>
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -49,7 +49,7 @@
     <main class="page-main">
       <section class="intro intro--form">
         <h1 class="visually-hidden">Welcom to the gorgeous Sedona</h1>
-        <img class="intro__image" src="img/text-sedona.svg" width="229" height="39"  alt="Welcome to the Sedona">
+        <img class="intro__image" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to the Sedona">
       </section>
       <section class="feedback">
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
@@ -59,15 +59,21 @@
             <h3 class="name__title">Представьтесь:</h3>
             <div class="name__wrapper">
               <label for="first-name" class="name__label ">Имя*:</label>
-              <input type="text" id="first-name" placeholder="Петр" class="name__input" required>
+              <div class="name__wrapper-input">
+                <input type="text" id="first-name" placeholder="Петр" class="name__input" required>
+              </div>
             </div>
             <div class="name__wrapper">
               <label for="last-name" class="name__label ">Фамилия*:</label>
-              <input type="text" id="last-name" placeholder="Иванов" class="name__input" required>
+              <div class="name__wrapper-input">
+                <input type="text" id="last-name" placeholder="Иванов" class="name__input" required>
+              </div>
             </div>
             <div class="name__wrapper">
               <label for="middle-name" class="name__label ">Отчество:&nbsp; </label>
-              <input type="text" id="middle-name" placeholder="Александрович" class="name__input">
+              <div class="name__wrapper-input">
+                <input type="text" id="middle-name" placeholder="Александрович" class="name__input">
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset contacts">
@@ -77,7 +83,7 @@
                 <label for="phone-number" class="contacts__label">
                   <span class="contacts__hidden">Контактный</span> телефон*:
                 </label>
-                <input type="text" id="phone-number" placeholder="Введите телефон" class="contacts__input" required>
+                <input type="tel" id="phone-number" pattern="[0-9]{10}" placeholder="Введите телефон" class="contacts__input" required>
               </div>
               <div class="contacts__wrapper">
                 <label for="email" class="contacts__label">Электронная почта*:</label>
@@ -91,7 +97,7 @@
             <label for="good" class="effect__label">Скорее положительное</label>
             <input type="radio" id="bad" name="effect" class="effect__input">
             <label for="bad" class="effect__label">Скорее отрицательное</label>
-            <input type="radio" id="nevermind" name="effect" class="effect__input" disabled>
+            <input type="radio" id="nevermind" name="effect" class="effect__input">
             <label for="nevermind" class="effect__label">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__fieldset attraction">
@@ -103,7 +109,7 @@
               <label for="bell" class="attraction__label">Гора-Колокол</label>
               <input type="checkbox" id="park" value="3" class="attraction__input" checked>
               <label for="park" class="attraction__label">Слайд-парк</label>
-              <input type="checkbox" id="rock" value="4" class="attraction__input" disabled>
+              <input type="checkbox" id="rock" value="4" class="attraction__input">
               <label for="rock" class="attraction__label">Красные скалы&nbsp;</label>
             </div>
           </fieldset>
@@ -116,6 +122,20 @@
             <p class="form__required">* — обязательные поля</p>
           </div>
         </form>
+      </section>
+      <section class="popup">
+        <div class="popup__failure">
+          <h2 class="popup__title">Что-то пошло не&nbsp;так!</h2>
+          <p class="popup__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="popup__button button button--blue">OK</button>
+        </div>
+        <div class="popup__success">
+          <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+          <p class="popup__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <div class="popup__wrapper">
+            <button class="popup__button button button--blue">Закрыть окно</button>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -150,11 +170,12 @@
           </a>
         </li>
       </ul>
-      <a href="http://htmlacademy.ru" class="page-footer__htmlacademy htmlacademy-link">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__htmlacademy htmlacademy-link">
         <span class="htmlacademy-link__text">Разработано</span>
-        <svg class="htmlacademy-link__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        <svg width="40" height="40" class="htmlacademy-link__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
       </a>
     </footer>
     <script src="js/menu.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
