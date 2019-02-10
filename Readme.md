@@ -1,4 +1,4 @@
-#Beatiful and light adaptive web site SEDONA
+# Beatiful and light adaptive web site SEDONA
 
 Was used CSS extension SASS, gulp as a build system
 
